@@ -1,0 +1,38 @@
+.title{
+  @apply font-bold text-center;
+}
+.stageGrid{
+  @apply grid grid-cols-3 gap-8 mb-5;
+}
+.firstRow{
+  @apply col-span-3 grid grid-cols-3 gap-8;
+}
+.inner{
+  @apply flex flex-col mx-auto gap-6;
+  max-width:660px;
+}
+.stage2Grid{
+  @apply grid
+}
+.minusBtn{
+  width:14px;
+  height:4px;
+}
+.minusBtnWrapper{
+  @apply flex items-center cursor-pointer;
+}
+.minusBtnWrapper:hover>.minusBtn{
+  filter: invert(14%) sepia(95%) saturate(6589%) hue-rotate(4deg) brightness(106%) contrast(118%);
+}
+.additionalForm{
+  @apply bg-green-100 rounded-md p-3 flex flex-col gap-4;
+}
+@media screen and (max-width:500px){
+  .firstRow{
+    @apply grid-cols-2 col-span-2;
+  }
+  .stageGrid{
+    width:90vw;
+    @apply grid-cols-2;
+  }
+}

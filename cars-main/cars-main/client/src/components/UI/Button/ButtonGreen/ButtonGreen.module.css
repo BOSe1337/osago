@@ -1,0 +1,6 @@
+.btn{
+  @apply border border-green-500 bg-green-500 text-white py-2 px-10 rounded-lg shadow-xl text-lg h-full;
+}
+.btn:hover{
+  @apply bg-white transition-colors text-green-500;
+}

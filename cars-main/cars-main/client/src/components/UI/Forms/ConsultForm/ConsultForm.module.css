@@ -1,0 +1,25 @@
+.formGrid{
+  @apply grid grid-cols-3 grid-rows-4 gap-y-1 gap-x-8 grid-flow-row;
+  width:660px;
+}
+.area{
+  @apply col-span-3;
+}
+.select{
+  @apply col-span-3;
+}
+.inner{
+  @apply flex items-center flex-col gap-y-4;
+}
+.form{
+  @apply flex flex-col items-center gap-5;
+}
+@media screen and (max-width:500px){
+  .formGrid{
+    width:95vw;
+    @apply grid-cols-1;
+  }
+  .area,.select{
+    @apply col-span-1;
+  }
+}

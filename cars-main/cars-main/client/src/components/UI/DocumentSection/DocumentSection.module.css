@@ -1,0 +1,21 @@
+.docs{
+  @apply flex gap-5;
+  min-width:500px;
+}
+.newDoc{
+  height:unset;
+}
+.icon{
+  width:60px !important;
+  height:76px !important;
+}
+@media screen and (max-width:500px){
+  .docs{
+    @apply grid grid-cols-2 gap-2;
+    min-width:unset;
+  }
+  .icon{
+  width:32px !important;
+  height:40.5px !important;
+  }
+}

@@ -1,0 +1,33 @@
+.top-line{
+  @apply flex justify-end pt-12 pr-28;
+}
+.container{
+  @apply px-4 mx-auto h-full;
+  max-width:1920px;
+}
+.modal{
+  @apply bg-white cursor-default bg-opacity-90 rounded-xl p-6;
+}
+.overlay{
+  @apply flex items-start justify-center cursor-pointer fixed bg-black bg-opacity-60 left-0 right-0 bottom-0 top-0 backdrop-blur-sm overflow-auto pt-10 pb-10;
+}
+.file-drop > .file-drop-target.file-drop-dragging-over-frame {
+  /* overlay a black mask when dragging over the frame */
+  border: dashed;
+  z-index: 50;
+  opacity: 1;
+
+}
+.file-drop{
+  @apply flex;
+  height:unset;
+}
+.file-drop>.file-drop-target{
+  @apply flex;
+}
+@media screen and (max-width:500px){
+  .container{
+    max-width:470px;
+  }
+}
+/*Тут самые основные стили, которые встречаются по всему приложению.*/

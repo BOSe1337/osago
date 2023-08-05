@@ -1,0 +1,16 @@
+.input{
+  @apply border bg-white rounded-lg px-2 py-2 w-full;
+  box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.25);
+}
+.input:hover::placeholder{
+  @apply text-gray-500;
+}
+.input::focus, .input::active{
+  outline:none;
+}
+.label{
+  @apply text-sm text-gray-600 flex flex-col gap-2;
+}
+.error,.error:focus{
+  @apply border border-solid border-red-600;
+}

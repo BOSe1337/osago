@@ -1,0 +1,7 @@
+.btn{
+  @apply px-6 py-3 flex items-center font-medium text-lg transition-colors;
+}
+.btn:hover{
+  @apply bg-green-500;
+  box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
+}

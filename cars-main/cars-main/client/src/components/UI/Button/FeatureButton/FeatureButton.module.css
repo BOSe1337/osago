@@ -1,0 +1,27 @@
+
+.btn{
+  @apply relative border border-gray-300 flex flex-col gap-7 justify-center items-center bg-black bg-opacity-5 transition-colors text-black py-5 px-5 rounded-lg shadow-2xl text-xl;
+  width:200px;
+  height:100px;
+}
+.btn:hover{
+  @apply bg-opacity-50;
+}
+.btn>span{
+  @apply opacity-0 transition-opacity text-white;
+}
+.btn:hover>span{
+  @apply opacity-100;
+}
+.btn>img{
+  @apply w-10 h-10 absolute transition-opacity;
+}
+.btn:hover>img{
+  @apply opacity-0;
+}
+@media screen and (max-width:500px){
+  .btn{
+    @apply p-2;
+    width:100%;
+  }
+}

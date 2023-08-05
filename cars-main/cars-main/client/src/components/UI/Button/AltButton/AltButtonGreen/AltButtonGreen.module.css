@@ -1,0 +1,27 @@
+.btn{
+  @apply border bg-gray-900 text-white py-2 px-10 rounded-md shadow-xl text-lg;
+}
+.btn:hover{
+  @apply bg-white transition-colors text-black;
+}
+.alt{
+  @apply bg-white transition-colors uppercase flex justify-center items-center font-medium;
+  border-color:#227c26;
+  color:#227c26;
+}
+.alt::before{
+  content:"";
+  background:url(../../../../../images/plus.svg);
+  @apply mr-1 block bg-cover;
+  width:12px;
+  height:12px;
+  filter: invert(33%) sepia(93%) saturate(442%) hue-rotate(73deg) brightness(93%) contrast(86%);
+
+}
+.alt:hover{
+  @apply text-white;
+  background-color: #227c26;
+}
+.alt:hover::before{
+  filter:sepia(100%) invert(100%);
+}

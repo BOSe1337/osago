@@ -1,0 +1,13 @@
+{
+  "port"        : 5000,
+  "postgreUser" :"postgres",
+  "postgrePass" :"10voxtels",
+  "postgreHost" :"localhost",
+  "postgrePort" :5432,
+  "postgreDB"   :"cars",
+  "baseUrl"     :"http://localhost:5000",
+  "jwtSecret"   :"carsdiploma",
+  "cryptoKey"   :"1cb35ed0e07679fa1c3e918bbcd4753f76ded95b0c0b19adfda47c1ddf642369",
+  "cryptoIv"    :"19a3f7e180cf04558bbd1f68a89ad9d7",
+  "cryptoAlg"   :"aes-256-cbc"
+}

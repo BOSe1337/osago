@@ -1,0 +1,18 @@
+.btnGroup{
+  @apply h-full absolute -right-20 transition-all w-20 flex justify-center items-center rounded-l-md;
+}
+.icon{
+  @apply stroke-white scale-50;
+}
+.btn{
+  @apply w-1/2 h-full bg-green-400 flex justify-center items-center;
+}
+.btn:hover{
+  @apply bg-green-500;
+}
+.delBtn{
+  @apply bg-red-400 ;
+}
+.delBtn:hover{
+  @apply bg-red-500;
+}

@@ -1,0 +1,29 @@
+.doc{
+  @apply relative border border-gray-300 flex flex-col gap-4 p-5 shadow-2xl items-center bg-opacity-0 bg-black transition-colors rounded-md w-52;
+}
+.doc:hover{
+  @apply bg-opacity-50;
+}
+.img{
+  @apply w-32 h-40 object-cover rounded-md;
+}
+.name{
+  @apply text-center flex gap-1 items-center justify-center h-full;
+}
+.downloadImg{
+  @apply w-2 h-2;
+}
+.delBtn{
+  @apply absolute -right-1 -top-1 scale-50 opacity-40 transition-opacity cursor-pointer;
+}
+.delBtn>svg{
+  @apply fill-red-600 stroke-red-600 object-cover;
+}
+.delBtn:hover{
+  @apply opacity-100;
+}
+@media screen and (max-width:500px){
+  .doc{
+    @apply p-5 w-full;
+  }
+}

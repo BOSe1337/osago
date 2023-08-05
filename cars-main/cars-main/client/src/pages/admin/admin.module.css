@@ -1,0 +1,115 @@
+.inner{
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+  max-width:1600px;
+  @apply mx-auto pt-8 px-14 pb-8;
+}
+.title{
+  @apply text-center text-3xl font-semibold tracking-wide mb-14 uppercase ;
+}
+.nav{
+  @apply flex justify-between mb-24;
+}
+.homeLink{
+  @apply text-xl relative flex items-center;
+}
+.homeLink::before{
+  content:"";
+  display:block;
+  margin-right:5px;
+  background:url(../../images/arrow.svg);
+  width:14px;
+  height:8px;
+}
+.tableContainer{
+  @apply flex flex-col mx-auto relative;
+}
+.table{
+  min-height:500px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.15);
+  @apply rounded-lg h-full;
+}
+.tableHead{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.tableRow{
+  @apply grid grid-cols-7 w-full border-b transition-colors relative overflow-hidden;
+}
+.tableRow:hover{
+  @apply bg-gray-200 cursor-pointer;
+}
+.tableRow:hover .docBtn{
+  @apply right-0;
+}
+.tableHeading{
+  @apply font-medium text-lg;
+  padding-top:10px;
+  padding-bottom:13px;
+}
+.tableCell{
+  @apply whitespace-nowrap px-2 text-center py-2 overflow-hidden;
+}
+.tableCell:not(:first-of-type){
+  @apply border-l;
+}
+.buttonGroup{
+  @apply flex justify-between rounded-b-lg absolute bottom-0 left-0 right-0;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.addBtn{
+  border-radius: 0 0 0 8px;
+}
+.addBtn::after{
+  content:"";
+  @apply ml-2 w-3 h-3 block;
+  background:url(../../images/plus.svg);
+  background-size: cover;
+}
+.editBtn::after{
+  content:"";
+  @apply ml-2 w-3 h-3 block;
+  background:url(../../images/edit.svg);
+  background-size: cover;
+}
+.delBtn::after{
+  content:"";
+  @apply ml-2 w-3 block;
+  height:2px;
+  background:url(../../images/del.svg);
+  background-size: cover;
+}
+.delBtn:hover{
+  @apply bg-red-500;
+}
+.expBtn{
+  background:#5AF197;
+  border-radius: 0px 0px 8px 0px;
+  box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+.expBtn::after{
+  content:"";
+  @apply ml-2 w-3 h-3 block;
+  background:url(../../images/export.svg);
+  background-size: cover;
+}
+.defaultBtns{
+  @apply flex;
+}
+.logoutLink{
+  @apply flex items-center py-2;
+}
+.logoutLink::after{
+  content:"";
+  background: url(../../images/logout.svg);
+  @apply block bg-cover bg-no-repeat ml-1;
+  width:8px;
+  height:8px;
+}
+.features{
+  @apply flex flex-col gap-8;
+}
+@media screen and (max-width:500px){
+  .nav{
+    @apply mb-6 flex-col justify-center items-center gap-6;
+  }
+}

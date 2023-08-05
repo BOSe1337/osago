@@ -1,0 +1,13 @@
+.area{
+  @apply bg-white rounded-lg px-2 py-2 w-full h-full resize-none;
+  box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.25);
+}
+.area:hover::placeholder{
+  @apply text-gray-500;
+}
+.area::focus, .input::active{
+  outline:none;
+}
+.label{
+  @apply text-sm text-gray-600 flex flex-col gap-2;
+}

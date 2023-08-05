@@ -1,0 +1,21 @@
+.form{
+  @apply flex flex-col bg-gray-100 m-auto items-center gap-4 border py-3 px-6 shadow-md;
+}
+.desc{
+  @apply w-full text-center;
+}
+.desc > a{
+  @apply underline;
+}
+.title{
+  @apply text-center text-3xl;
+}
+.input{
+  @apply text-lg;
+}
+.buttonGroup{
+  @apply flex gap-4;
+}
+.formGrid{
+  @apply grid row-auto gap-4;
+}

@@ -1,0 +1,31 @@
+.container{
+  @apply flex justify-center;
+}
+.stage{
+  @apply flex gap-3 text-opacity-50;
+}
+.stage:not(:last-of-type){
+  @apply pr-4;
+}
+.stage:not(:last-of-type)::after{
+  content:">";
+  @apply text-sm;
+}
+.active{
+  @apply relative text-opacity-100;
+}
+.active::before{
+  content:"";
+  @apply absolute block left-0 right-0 -bottom-3;
+  height:2px;
+  border-radius:1px;
+  background:black;
+}
+@media screen and (max-width:500px){
+  .stage{
+    @apply gap-2;
+  }
+  .stage:not(:last-of-type){
+    @apply pr-2;
+  }
+}

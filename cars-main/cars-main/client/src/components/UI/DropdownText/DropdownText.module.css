@@ -1,0 +1,24 @@
+.parent{
+  @apply relative;
+}
+.parent:hover .caption::after{
+  transform:rotate(180deg);
+}
+.caption{
+  @apply flex items-center text-2xl font-semibold;
+}
+.caption::after{
+  content:"";
+  background:url(../../../images/dropdown.svg);
+  @apply block ml-2 bg-cover transition-all;
+  width:17px;
+  height:9px;
+}
+.dropdown{
+  @apply flex px-2 max-h-0 opacity-0 overflow-hidden transition-all absolute right-0 rounded-md border-t-2 h-full;
+  width:102%;
+  box-shadow:0 2px 5px 2px rgba(0,0,0,.3);
+}
+.dropdownOpen{
+  @apply max-h-full opacity-100;
+}
